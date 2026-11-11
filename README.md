@@ -30,9 +30,3 @@ python -m http.server 8000
 
 打開 http://localhost:8000 。
 
-## 部署到 GitHub Pages
-
-1. 把整個資料夾內容上傳到 GitHub repository（`index.html` 要在最上層）。
-2. 到 repository 的 Settings → Pages。
-3. Source 選 `Deploy from a branch`，Branch 選 `main`，資料夾選 `/ (root)`，按 Save。
-4. 等一兩分鐘，頁面上方會出現網址：`https://<帳號>.github.io/<repository 名稱>/`。
