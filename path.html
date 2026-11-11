@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小徑｜學習路徑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<p id="msg" class="msg wrap">載入中…</p>
+
+<div id="content" hidden>
+<header class="hero">
+  <div class="wrap">
+    <a class="brand" href="index.html">小徑</a><a class="crumb" href="index.html">← 回路徑集</a>
+    <h1 id="title"></h1>
+    <p class="goal" id="goal"></p>
+
+    <div class="trail">
+      <svg viewBox="0 0 800 130" role="img" aria-label="學習路徑示意圖：每個單元是小路上的一個點，顏色表示完成狀態">
+        <path id="trailPath" class="road" d="M16,92 C90,14 170,122 262,66 S 430,6 508,62 S 668,118 784,38"/>
+        <path class="road-dash" d="M16,92 C90,14 170,122 262,66 S 430,6 508,62 S 668,118 784,38"/>
+        <g id="trailDots"></g>
+      </svg>
+      <ul class="legend" aria-label="圖例">
+        <li><i class="done"></i>已完成</li>
+        <li><i class="doing"></i>進行中</li>
+        <li><i class="late"></i>落後</li>
+        <li><i class="todo"></i>未開始</li>
+        <li><i class="pin"></i>今天的位置</li>
+      </ul>
+    </div>
+
+    <div class="controls">
+      <div>
+        <label for="startDate">開始日期</label>
+        <input type="date" id="startDate">
+      </div>
+      <div>
+        <label for="simSlider" id="simLabel">模擬今天</label>
+        <div class="sim-row">
+          <input type="range" id="simSlider" min="0" max="62" step="1" value="0">
+          <button type="button" id="resetBtn">回到真實今天</button>
+        </div>
+        <p class="hint">拖動滑桿可以快轉時間，觀察沒完成的單元如何變成「落後」，以及系統給的調整建議。</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <main class="layout">
+    <section aria-labelledby="h-units">
+      <h2 id="h-units">課程清單</h2>
+      <ol class="units" id="units"></ol>
+    </section>
+
+    <aside aria-labelledby="h-progress">
+      <h2 id="h-progress">我的進度</h2>
+      <div class="panel">
+        <div class="pct"><span id="pctNum">0</span><small>%</small></div>
+        <div class="bar" id="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="整體完成進度">
+          <div class="fill" id="fill"></div>
+          <div class="tick" id="tick" title="依時程此刻應有的進度"></div>
+        </div>
+        <p class="bar-note">綠色是實際進度，黑色細線是依時程此刻應有的進度（<span id="expPct">0</span>%）。</p>
+        <p class="counts" id="counts"></p>
+        <div class="status" id="status" aria-live="polite">
+          <strong id="statusHead"></strong>
+          <p id="statusAdvice"></p>
+          <p id="statusLoad"></p>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <section class="gantt-sec" aria-labelledby="h-gantt">
+    <h2 id="h-gantt">時程甘特圖</h2>
+    <div class="gantt-scroll"><div class="gantt" id="gantt"></div></div>
+  </section>
+
+  <footer>路徑由人工整理，教材皆為免費公開資源。進度只存在你的瀏覽器，不會上傳。</footer>
+</div>
+</div>
+
+<script src="assets/common.js"></script>
+<script src="assets/path.js"></script>
+</body>
+</html>

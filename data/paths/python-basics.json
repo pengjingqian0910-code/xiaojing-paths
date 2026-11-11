@@ -1,0 +1,83 @@
+{
+  "slug": "python-basics",
+  "title": "8 週學會 Python 基礎",
+  "goal": "目標：能寫出簡單的小程式。每週約 6 小時，教材全部是免費公開資源。",
+  "level": "入門",
+  "updated": "2026-11-12",
+  "units": [
+    {
+      "name": "環境安裝與第一支程式",
+      "hours": 4,
+      "days": 5,
+      "note": "安裝 Python，用 print、變數與運算做幾個簡單計算。",
+      "links": [
+        { "title": "Python 官方下載頁", "url": "https://www.python.org/downloads/" },
+        { "title": "官方教學：Python 的非正式簡介", "url": "https://docs.python.org/zh-tw/3/tutorial/introduction.html" }
+      ]
+    },
+    {
+      "name": "流程控制：if、for、while",
+      "hours": 6,
+      "days": 7,
+      "note": "學會條件判斷與迴圈，練習寫一個 FizzBuzz。",
+      "links": [
+        { "title": "官方教學：更多控制流程工具", "url": "https://docs.python.org/zh-tw/3/tutorial/controlflow.html" }
+      ]
+    },
+    {
+      "name": "資料結構：list、dict",
+      "hours": 6,
+      "days": 7,
+      "note": "練習清單與字典的新增、查詢、迴圈走訪。",
+      "links": [
+        { "title": "官方教學：資料結構", "url": "https://docs.python.org/zh-tw/3/tutorial/datastructures.html" }
+      ]
+    },
+    {
+      "name": "函式",
+      "hours": 6,
+      "days": 7,
+      "note": "把重複的程式碼包成函式，練習參數與回傳值。",
+      "links": [
+        { "title": "官方教學：定義函式", "url": "https://docs.python.org/zh-tw/3/tutorial/controlflow.html#defining-functions" }
+      ]
+    },
+    {
+      "name": "模組與套件",
+      "hours": 5,
+      "days": 6,
+      "note": "學會 import，試著用標準函式庫的 random 與 datetime。",
+      "links": [
+        { "title": "官方教學：模組", "url": "https://docs.python.org/zh-tw/3/tutorial/modules.html" }
+      ]
+    },
+    {
+      "name": "檔案讀寫與例外處理",
+      "hours": 6,
+      "days": 7,
+      "note": "讀寫文字檔，並用 try/except 處理使用者輸入錯誤。",
+      "links": [
+        { "title": "官方教學：輸入與輸出", "url": "https://docs.python.org/zh-tw/3/tutorial/inputoutput.html" },
+        { "title": "官方教學：錯誤與例外", "url": "https://docs.python.org/zh-tw/3/tutorial/errors.html" }
+      ]
+    },
+    {
+      "name": "類別與物件",
+      "hours": 7,
+      "days": 8,
+      "note": "理解類別、屬性與方法，把一個小角色寫成類別。",
+      "links": [
+        { "title": "官方教學：類別", "url": "https://docs.python.org/zh-tw/3/tutorial/classes.html" }
+      ]
+    },
+    {
+      "name": "期末小專案",
+      "hours": 8,
+      "days": 9,
+      "note": "整合前七個單元，完成一個猜數字遊戲或待辦清單小程式。",
+      "links": [
+        { "title": "官方教學：標準函式庫導覽", "url": "https://docs.python.org/zh-tw/3/tutorial/stdlib.html" }
+      ]
+    }
+  ]
+}

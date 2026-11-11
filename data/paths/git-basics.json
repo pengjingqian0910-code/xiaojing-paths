@@ -1,0 +1,46 @@
+{
+  "slug": "git-basics",
+  "title": "4 週學會 Git 與 GitHub 基礎",
+  "goal": "目標：能用 Git 管理自己的專案，並把網頁發布到 GitHub Pages。每週約 4 小時，教材全部是免費公開資源。",
+  "level": "入門",
+  "updated": "2026-11-12",
+  "units": [
+    {
+      "name": "安裝 Git 與第一次提交",
+      "hours": 4,
+      "days": 7,
+      "note": "安裝 Git，建立一個資料夾，完成 init、add、commit 各一次。",
+      "links": [
+        { "title": "Git 官方下載頁", "url": "https://git-scm.com/downloads" },
+        { "title": "Pro Git 中文版（官方免費電子書）", "url": "https://git-scm.com/book/zh-tw/v2" }
+      ]
+    },
+    {
+      "name": "分支與合併",
+      "hours": 4,
+      "days": 7,
+      "note": "理解 branch 與 merge，用互動式練習把常見指令各做過一次。",
+      "links": [
+        { "title": "Learn Git Branching（互動練習）", "url": "https://learngitbranching.js.org/?locale=zh_TW" }
+      ]
+    },
+    {
+      "name": "把專案上傳到 GitHub",
+      "hours": 4,
+      "days": 7,
+      "note": "建立遠端儲存庫，練習 push 與 pull，並看懂 commit 紀錄。",
+      "links": [
+        { "title": "Pro Git：電子書索引", "url": "https://git-scm.com/book/zh-tw/v2" }
+      ]
+    },
+    {
+      "name": "用 GitHub Pages 發布網頁",
+      "hours": 4,
+      "days": 7,
+      "note": "把一個靜態網頁發布成公開網址。",
+      "links": [
+        { "title": "GitHub Pages 官方文件", "url": "https://docs.github.com/zh/pages" }
+      ]
+    }
+  ]
+}
