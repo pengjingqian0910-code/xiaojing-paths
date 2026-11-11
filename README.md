@@ -2,7 +2,7 @@
 
 用免費公開的網路資源，排好目標與時程、可以勾選進度的自學路徑。這是「小徑」（幫自學者規劃資源與進度的 AI）的展示版。
 
-- 網頁：（部署後填入 GitHub Pages 網址）
+- 網頁：[https://pengjingqian0910-code.github.io/xiaojing-paths/](https://pengjingqian0910-code.github.io/xiaojing-paths/)
 - 專案規則：[CLAUDE.md](CLAUDE.md)（給 AI 讀的開發規則）
 
 ## 目前的路徑
